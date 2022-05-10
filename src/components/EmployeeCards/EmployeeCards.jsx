@@ -1,4 +1,5 @@
 import React from "react";
+import TicketCounter from "../TicketCounter/TicketCounter";
 import "./EmployeeCards.scss";
 
 // const EmployeeCards = ({ employeeDetails }) => {
@@ -7,14 +8,20 @@ const EmployeeCards = ({ employeeDetails }) => {
   // loop through each element & pass the name and role in p tag
   console.log(employeeDetails);
   const employeeCardsJSX = employeeDetails.map((employee) => (
-    <p className="EmployeeCardsContainer">
-      {employee.name} {employee.role}
-      test {"test"}
-    </p>
+    <div className="EmployeeCard">
+      <p>
+        {"Name: "} {employee.name}
+      </p>
+      <p>
+        {"Role: "}
+        {employee.role}
+      </p>
+      <TicketCounter />
+    </div>
   ));
 
   console.log(employeeCardsJSX);
-  return <div>{employeeCardsJSX}</div>;
+  return <div className="EmployeeCardsContainer">{employeeCardsJSX}</div>;
 };
 
 export default EmployeeCards;
