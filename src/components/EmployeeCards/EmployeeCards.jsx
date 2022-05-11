@@ -7,7 +7,7 @@ const EmployeeCards = ({ employeeDetails }) => {
   //   console.log({ employeeDetails });
   // loop through each element & pass the name and role in p tag
   console.log(employeeDetails);
-  const employeeCardsJSX = employeeDetails.map((employee) => (
+  const employeeCardsJSX = employeeDetails.map(employee => (
     <div className="EmployeeCard">
       <p>
         {"Name: "} {employee.name}

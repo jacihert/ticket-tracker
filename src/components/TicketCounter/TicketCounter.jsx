@@ -8,10 +8,10 @@ const TicketCounter = () => {
     setCounter(counter + 1);
   };
   const handleDecrement = () => {
-    if (counter ===0 ) {
+    if (counter === 0) {
       setCounter(0);
     } else {
-      setCounter(counter-1);
+      setCounter(counter - 1);
     }
   };
 
