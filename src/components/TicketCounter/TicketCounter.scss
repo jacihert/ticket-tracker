@@ -1,5 +1,27 @@
+@use "../../assets/sass/variables" as *;
 .counterContainer {
-  border: 2px solid orange;
+  background-color: $color-pink;
+  border: 2px solid $color-black;
   height: 10rem;
-  width: 5rem;
+  width: 8rem;
+  padding: 5px ;
+  margin: 3em;
+}
+.button{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.counterContent{
+  
+  display: block;
+  p{
+    text-align: center;
+  }
+
+}
+.counterTitle{
+  text-align: center;
+
 }

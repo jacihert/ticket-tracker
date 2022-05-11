@@ -2,22 +2,27 @@ import React, { useState } from "react";
 import "./TicketCounter.scss";
 
 const TicketCounter = () => {
-  const [ticketCounter, setTicketCounter] = useState(0);
+  const [counter, setCounter] = useState(0);
 
   const handleIncrement = () => {
-    if (ticketCounter === 0) {
-      setTicketCounter((ticketCounter += 1));
+    setCounter(counter + 1);
+  };
+  const handleDecrement = () => {
+    if (counter ===0 ) {
+      setCounter(0);
     } else {
-      setTicketCounter(0);
+      setCounter(counter-1);
     }
   };
 
   const ticketCounterJSX = (
-    <div>
+    <div className="counterContent">
       <h6 className="counterTitle">Counter</h6>
-      {/* <p>{TicketCounter}</p> */}
-      <button onClick={handleIncrement}>+</button>
-      <button>-</button>
+      <p>{counter}</p>
+      <div className="button">
+        <button onClick={handleIncrement}>+</button>
+        <button onClick={handleDecrement}>-</button>
+      </div>
     </div>
   );
 

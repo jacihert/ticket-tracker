@@ -1,14 +1,15 @@
 @use "../../assets/sass/variables" as *;
 .EmployeeCardsContainer {
-  border: 2px solid red;
-
+//   border: 2px solid $color-black;
+   
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
 }
 .EmployeeCard {
-  border: 2px solid blue;
+    background-color: $color-pink-light;
+  border: 2px solid $color-black;
   height: 20rem;
   width: 15rem;
   text-align: left;
