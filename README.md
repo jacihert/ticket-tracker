@@ -1,4 +1,4 @@
-# React App - Ticket Tracker
+# React Application - Ticket Tracker
 ## View & manage tickets assigned to the team
 [Click here to check it out](https://jacihert.github.io/ticket-tracker/)
 
